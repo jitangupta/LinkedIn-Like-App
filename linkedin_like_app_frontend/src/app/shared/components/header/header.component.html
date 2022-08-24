@@ -1,1 +1,21 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg sticky-top bg-light">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="'/'">Linked Like App</a>
+    <div class="collapse navbar-collapse d-flex justify-content-between">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 ms-5" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="btn-group" dropdown placement="bottom right">
+        <button id="button-alignment" dropdownToggle type="button" class="dropdown-toggle"
+          aria-controls="dropdown-alignment">
+          Profile <span class="caret"></span>
+        </button>
+        <ul id="dropdown-alignment" *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu"
+          aria-labelledby="button-alignment">
+          <li role="menuitem"><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
