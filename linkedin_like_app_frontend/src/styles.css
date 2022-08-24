@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+.login-form {
+  width: 350px;
+  margin-top: 125px;
+}
+
+.login-help a{
+  color: #434343;
+}
