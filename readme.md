@@ -12,3 +12,6 @@ Stop mongo-db server
 ```
 brew services stop mongodb-community@6.0
 ```
+
+### Angular Environment Setups
+1- https://stackoverflow.com/questions/49699067/property-has-no-initializer-and-is-not-definitely-assigned-in-the-construc
