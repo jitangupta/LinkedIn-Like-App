@@ -14,7 +14,7 @@
     </div>
     <div class="col-6">
       <!--New Post-->
-      <app-new-post></app-new-post>
+      <app-new-post (responseEvent)="prependPost($event)"></app-new-post>
 
       <!--Post List-->
       <div class="card">

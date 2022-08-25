@@ -15,6 +15,9 @@ import { BaseComponent } from './base.component';
 import { SearchComponent } from './pages/search/search.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NewPostComponent } from './shared/components/new-post/new-post.component';
+import { AuthService } from './core/services/auth.service';
+import { PostService } from './core/services/post.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,10 +37,11 @@ import { NewPostComponent } from './shared/components/new-post/new-post.componen
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     ModalModule.forRoot(),
     BsDropdownModule.forRoot(),
   ],
-  providers: [],
+  providers: [AuthService, PostService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

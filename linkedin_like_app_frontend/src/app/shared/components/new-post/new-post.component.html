@@ -2,9 +2,11 @@
   <div class="card-body">
     <div class="d-flex">
       <div class="me-3">
-        <img class="border border-2 rounded-circle mini-profile" src="https://dummyimage.com/250x250/fdfba9/004588.jpg&text=Profile" />
+        <img class="border border-2 rounded-circle mini-profile"
+          src="https://dummyimage.com/250x250/fdfba9/004588.jpg&text=Profile" />
       </div>
-      <div class="border rounded-pill border-2 p-2 w-100 d-flex align-items-center bg-white" (click)="openModal(template)">
+      <div class="border rounded-pill border-2 p-2 w-100 d-flex align-items-center bg-white"
+        (click)="openModal(template)">
         <p class="card-text mb-0 ps-2">Start a post</p>
       </div>
     </div>
@@ -23,7 +25,8 @@
     <!--User & Post type-->
     <div class="d-flex">
       <div class="me-3">
-        <img class="border border-2 rounded-circle mini-profile" src="https://dummyimage.com/250x250/fdfba9/004588.jpg&text=Profile" />
+        <img class="border border-2 rounded-circle mini-profile"
+          src="https://dummyimage.com/250x250/fdfba9/004588.jpg&text=Profile" />
       </div>
       <div class="w-100 d-flex align-items-center">
         <p class="card-text mb-0 ps-2 pe-2 border rounded-pill">Post visibility: anyone</p>
@@ -33,7 +36,7 @@
     <!--Post-->
     <textarea class="post-textarea" placeholder="What do you want to talk about?" maxlength="500"></textarea>
     <div class="float-end">
-      <button type="button" class="btn btn-sm p-0 me-1">
+      <button type="button" class="btn btn-sm p-0 me-1" (click)="onSubmit()">
         <img src="/assets/images/image-icon.png" style="max-width: 40px;" class="img-fluid">
       </button>
       <div class="vr"></div>
