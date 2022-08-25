@@ -12,6 +12,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { NotFoundComponent } from './shared/components/notfound/notfound.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BaseComponent } from './base.component';
+import { SearchComponent } from './pages/search/search.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { BaseComponent } from './base.component';
 
     HeaderComponent,
     NotFoundComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     ModalModule.forRoot(),
     BsDropdownModule.forRoot(),
   ],

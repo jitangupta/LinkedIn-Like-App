@@ -1,0 +1,8 @@
+.people-card .profile-image img {
+  height: 80px !important;
+  width: 80px !important;
+  border-color: #b5b5b5;
+}
+.people-card .profile-detail {
+  width: 100%;
+}
