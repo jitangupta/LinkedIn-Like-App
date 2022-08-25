@@ -1,0 +1,43 @@
+<div class="card mb-4 bg-light" *ngIf="newPostVisibility">
+  <div class="card-body">
+    <div class="d-flex">
+      <div class="me-3">
+        <img class="border border-2 rounded-circle mini-profile" src="https://dummyimage.com/250x250/fdfba9/004588.jpg&text=Profile" />
+      </div>
+      <div class="border rounded-pill border-2 p-2 w-100 d-flex align-items-center bg-white" (click)="openModal(template)">
+        <p class="card-text mb-0 ps-2">Start a post</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Create a post</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+
+    <!--User & Post type-->
+    <div class="d-flex">
+      <div class="me-3">
+        <img class="border border-2 rounded-circle mini-profile" src="https://dummyimage.com/250x250/fdfba9/004588.jpg&text=Profile" />
+      </div>
+      <div class="w-100 d-flex align-items-center">
+        <p class="card-text mb-0 ps-2 pe-2 border rounded-pill">Post visibility: anyone</p>
+      </div>
+    </div>
+
+    <!--Post-->
+    <textarea class="post-textarea" placeholder="What do you want to talk about?" maxlength="500"></textarea>
+    <div class="float-end">
+      <button type="button" class="btn btn-sm p-0 me-1">
+        <img src="/assets/images/image-icon.png" style="max-width: 40px;" class="img-fluid">
+      </button>
+      <div class="vr"></div>
+      <button type="button" class="btn btn-primary ms-2">Post</button>
+    </div>
+  </div>
+</ng-template>

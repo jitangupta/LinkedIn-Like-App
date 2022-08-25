@@ -1,0 +1,11 @@
+
+.post-textarea {
+  padding: 15px 0;
+  width: 100%;
+  border: none;
+  resize: none;
+  height: 150px;
+}
+.post-textarea:focus {
+  outline: none;
+}

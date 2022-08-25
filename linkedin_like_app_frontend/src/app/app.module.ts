@@ -14,6 +14,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { BaseComponent } from './base.component';
 import { SearchComponent } from './pages/search/search.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NewPostComponent } from './shared/components/new-post/new-post.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     NotFoundComponent,
     SearchComponent,
+    NewPostComponent,
   ],
   imports: [
     BrowserModule,
